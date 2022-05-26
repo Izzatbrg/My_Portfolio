@@ -123,3 +123,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR /'static'
 MEDIA_Root = BASE_DIR / 'assets'
 MEDIA_URL = '/assets/'
+try:
+    from .local_settings import *
+except ImportError:
+    print("There are no changes!!")
