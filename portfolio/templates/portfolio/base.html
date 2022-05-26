@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'portfolio/NavBar.css'%}">
+<ul>
+  <li><a href="{% url  'home' %}" data-title="home">Home</a></li>
+  <li><a href="{% static  'portfolio/CV.pdf' %}" data-title="Resume">Resume</a></li>
+  <li><a href="{% url 'blog:all_blogs'%}" data-title="Blog">Blog</a></li>
+</ul>
+<title>Izzat Al Brgli</title>
+{% block content %}{% endblock %}
